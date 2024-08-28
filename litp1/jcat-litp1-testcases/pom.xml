@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	  <groupId>Temp.com.ericsson</groupId>
+	  <artifactId>litp1</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>se.ericsson.jcat</groupId>
+	<artifactId>jcat-litp1-testcases</artifactId>
+	<name>LITP RV1 TestCases</name>
+	<description>TestCases and Suites for our LITP RV1 project</description>
+
+	<build>
+		<plugins>
+			<!-- set the source code version and target version to java 1.6 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- this dependency is used to declare the dependency relationshiop between 
+			testcases project and extensions project -->
+		<dependency>
+			<groupId>se.ericsson.jcat</groupId>
+			<artifactId>jcat-litp1-extensions</artifactId>
+			<version>${project.version}</version>		
+		</dependency>
+		<dependency>
+			<groupId>se.ericsson.jcat</groupId>
+			<artifactId>jcat-fw</artifactId>
+			<version>R3A04-alpha-5</version>	
+		</dependency>
+		<dependency>
+			<groupId>se.ericsson.jcat</groupId>
+			<artifactId>jcat-extensions</artifactId>
+			<version>R3A04-alpha-5</version>	
+		</dependency>
+	</dependencies>
+</project>

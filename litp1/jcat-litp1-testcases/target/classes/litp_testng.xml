@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite - Litp TestNG Demo" parallel="false">
+	<listeners>
+		<listener class-name="se.ericsson.jcat.fw.ng.listeners.JcatTestListener" />
+		<listener class-name="se.ericsson.jcat.litp.fw.LitpSuiteListener" />
+	</listeners>
+	<test name="Test" preserve-order="true">
+		<classes>
+			<class name="se.ericsson.jcat.litp.tests.TC_TORRV80_Func_81">
+				<methods>
+					<include name="checkVersion" /> 
+					<include name="virshList" /><!-- single -->
+					<include name="puppetStatus" />
+					<include name="puppetMasterStatus" />
+					<include name="cobblerList" />
+					<include name="ipTables" />
+					<include name="litpAdmin" />
+					<include name="litpUser" />
+				</methods>
+			</class>
+			<class name="se.ericsson.jcat.litp.tests.TC_TORRV80_Func_82">
+				<methods>
+					<include name="logonNFS1" /><!-- single -->
+					<include name="logonSC1" /><!-- Test -->
+					<include name="logonSC2" /><!-- Test -->
+					<include name="logonPL3" /><!-- Test -->
+					<include name="logonPL4" /><!-- Test -->
+				</methods>
+			</class>
+			<class name="se.ericsson.jcat.litp.tests.TC_TORRV80_Func_83">
+				<methods>
+					<include name="cmwStatusSC1" />
+					<include name="cmwStatusSC2" />
+					<include name="cmwStatusPL3" /><!-- Test -->
+					<include name="cmwStatusPL4" /><!-- Test -->
+					<include name="checkForJBossInstallSC1" /><!-- Test -->
+					<include name="checkForJBossInstallSC2" /><!-- Test -->
+					<include name="checkForJBossInstallPL3" /><!-- Test -->
+					<include name="checkForJBossInstallPL4" /><!-- Test -->
+					<include name="cmwRepositorySC1" /><!-- Test -->
+					<include name="cmwRepositorySC2" /><!-- Test -->
+					<include name="cmwRepositoryPL3" /><!-- Test -->
+					<include name="cmwRepositoryPL4" /><!-- Test -->
+					<include name="cmwCampaignsSC1" /><!-- Test -->
+					<include name="cmwCampaignsSC2" /><!-- Test -->
+					<include name="cmwCampaignsPL3" /><!-- Test -->
+					<include name="cmwCampaignsPL4" />
+				</methods>
+				</class>
+			<class name="se.ericsson.jcat.litp.tests.TC_TORRV80_Func_84">
+				<methods>
+					<include name="blades_HPBL46x" /><!-- multi -->
+					<include name="blades_HPBL46xBios" /><!-- multi -->
+					<include name="cmw_CmwCluster" />
+					<include name="cmw_lde" />
+					<include name="tipc_lde" />
+					<include name="cobblerServer" />
+					<include name="cobbler_server_KickstartManager" />
+					<include name="cobbler_server_KSPartitionManager" />
+					<include name="hardware_generic_system" /><!-- multi -->
+					<include name="hardware_QLogicQMH2562" /><!-- multi -->
+					<include name="kickstart_Kickstart" />
+					<include name="libVirt" /><!-- single -->
+					<include name="puppetDashboard" />
+					<include name="mySqlServer" />
+					<include name="users" />
+					<include name="sudoers" />
+					<include name="clusterStatus" />
+					<include name="litp_Util" />
+					<include name="litputilPackage" />
+					<include name="nfsMount" />
+					<include name="servers_IpmiSystem" />
+					<include name="storage_StoragePoolSAN" /><!-- multi -->
+					<include name="virt_VMServiceSolaris" /><!-- single -->
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

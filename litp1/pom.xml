@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+<!--/>
+  <parent>
+    <groupId>com.ericsson.nms</groupId>
+    <artifactId>integration</artifactId>
+    <version>13.2</version>
+  </parent>
+-->
+  <groupId>Temp.com.ericsson</groupId>
+  <artifactId>litp1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>LITP RV-1</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>jcat-litp1-extensions</module>
+    <module>jcat-litp1-testcases</module>
+   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>se.ericsson.jcat</groupId>
+      <artifactId>jcat-fw</artifactId>
+      <version>R3A04-alpha-5</version>
+    </dependency>
+    <dependency>
+      <groupId>se.ericsson.jcat</groupId>
+      <artifactId>jcat-extensions</artifactId>
+      <version>R3A04-alpha-5</version>
+    </dependency>
+    <dependency>
+      <groupId>sshtools</groupId>
+      <artifactId>j2ssh-core</artifactId>
+      <version>0.2.9</version>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+    </dependency>
+  </dependencies>
+<!--/>
+   <scm>
+     <developerConnection>scm:git:ssh://eselivm2v238l.lmera.ericsson.se:29418/Temp/com.ericsson/sshTestCases</developerConnection>
+     <connection>scm:git:ssh://eselivm2v238l.lmera.ericsson.se:29418/Temp/com.ericsson/sshTestCases</connection>
+   </scm>
+-->
+</project>

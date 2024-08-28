@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite - Litp TestNG Performance" parallel="false" group-by-instances="true">
+	<listeners>
+		<listener class-name="se.ericsson.jcat.fw.ng.listeners.JcatTestListener" />
+		<listener class-name="se.ericsson.jcat.litp.listeners.LitpSuiteListener" />
+	</listeners>
+	<test name="Test Performance">
+		<classes> 
+			<class name="se.ericsson.jcat.litp.tests.suite.TestSuite_Performance">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
